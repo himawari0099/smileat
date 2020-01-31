@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>すまいる食卓</title>
+
+<!-- スライダー -->
+<link rel="stylesheet" type="text/css" href="slick/slick.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" media="screen" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<!-- css -->
+<link href="css/index_smile.css" rel="stylesheet">
+<style>
+	/* スライドショー用スタイル */
+
+	.main_visual{
+		width: 820px;
+		width: 100%;
+		height: 540px;
+		margin: 0 auto;
+	}
+
+	.main_visual .slider{
+		width: 100%;
+		height: calc( 100% - 30px );
+	}
+	
+	.slick-slide{
+		outline: none;
+	}
+
+	.main_visual .slider img{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	.slick-prev:before,
+	.slick-next:before{
+		font-size: 74px;
+	}
+</style>
+</head>
+<body>
+<div id="container">
+<header id="head">
+	<div class="head_wrap">
+	<p><img src="img/logo_mark.png" widht="180" height="120" alt="すまいる食卓ロゴ"></p>
+	<h1><img src="img/logo_type.png" width="232" height="103" alt="すまいる食卓"></h1>
+	<div class="join_area">
+		<a href="" class="regist btn">会員登録</a>
+		<a href="" class="login btn">ログイン</a>
+	</div>
+	<table>
+		<tbody>
+			<tr>
+				<th>お問い合わせセンター</th>
+				<td>受付時間　9:00〜18:00</td>
+			</tr>
+			<tr>
+				<td class="tel">0120-123-456</td>
+				<td><a href="">土・日・祝のお問い合わせはこちら</a></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<div id="navi">
+		<ul>
+			<li><a href="index.html" class="active"><span>トップ</span></a></li><!--
+			--><li><a href=""><span>店舗紹介</span></a></li><!--
+			--><li><a href="service.html"><span>サービスについて</span></a></li><!--
+			--><li><a href="qa.html"><span>よくある質問</span></a></li><!--
+			--><li><a href=""><span>会社情報</span></a></li>
+		</ul>
+	</div>
+</header>
+
+<div id="main">
+	<div class="main_visual">
+		<div class="slider">
+			<div style="height: 540px;"><img src="img/mv_01.png" alt=""></div>
+			<div style="height: 540px;"><img src="img/mv_02.png" alt=""></div>
+			<div style="height: 540px;"><img src="img/mv_03.png" alt=""></div>
+		</div>
+	</div>
+	<div class="search">
+		<h2><span>お店を探す</span></h2>
+		<div class="search_wrap">
+			<div class="search_tab_area marugo">
+				<label class="search_tab">
+					<input id="touhoku" type="radio" name="sarch_item" checked>
+					<span>北海道・東北</span>
+				</label>
+				<label class="search_tab">
+					<input id="kantou" type="radio" name="sarch_item">
+					<span>関東</span>
+				</label>
+				<label class="search_tab">
+					<input id="kansai" type="radio" name="sarch_item">
+					<span>関西</span>
+				</label>
+				<label class="search_tab">
+					<input id="chugoku" type="radio" name="sarch_item">
+					<span>中国・四国</span>
+				</label>
+				<label class="search_tab">
+					<input id="kyushu" type="radio" name="sarch_item">
+					<span>九州・沖縄</span>
+				</label>
+			</div>
+			
+			<div class="search_block">
+				<h3>おすすめ店舗紹介</h3>
+				<p class="pickup">
+					<a href="" class="marugo">
+						<span class="name">捕鯨 札幌店</span>
+						<span class="img">
+							<img src="img/search_img_01.png" alt="施設の写真">
+						</span>
+						<span class="text">
+							札幌の中でも大きな施設で、設備が豊富で過ごしやすいと評判がとても良いです。
+						</span>
+					</a>
+					<a href="" class="marugo">
+						<span class="name">らららんど</span>
+						<span class="img">
+							<img src="img/search_img_02.png" alt="施設の写真">
+						</span>
+						<span class="text">
+							北海道の中でも最大級の建物で、収容人数３００人ととても広い施設となっております。
+						</span>
+					</a>
+					<a href="" class="marugo">
+						<span class="name">海達八</span>
+						<span class="img">
+							<img src="img/search_img_01.png" alt="施設の写真">
+						</span>
+						<span class="text">
+							札幌の中でも大きな施設で、設備が豊富で過ごしやすいと評判がとても良いです。
+						</span>
+					</a>
+				</p>
+				<p class="question">
+					<a href="" class="marugo">質問に答えて絞り込む</a>
+				</p>
+				<form class="search_form" action="search_result.html">
+					<div class="search_keyword">
+						<input type="text" placeholder="キーワード">
+						<button type="submit">検索</button>
+					</div>
+
+					<div class="search_cr_wrap">
+						<div class="search_eat search_cr">
+							<label class="all">
+								<input type="checkbox" name="eat_all" value="kaigoshoku">
+								<span>介護食</span>
+							</label>
+							<label>
+								<input type="checkbox" name="eat" value="kizamishoku">
+								<span>きざみ食</span>
+							</label>
+							<label>
+								<input type="checkbox" name="eat" value="mu_sushoku">
+								<span>ムース食</span>
+							</label>
+							<label>
+								<input type="checkbox" name="eat" value="yawarakashoku">
+								<span>やわらか食</span>
+							</label>
+						</div>
+
+						<div class="search_bf search_cr">
+							<label class="all">
+								<input type="checkbox" name="bf_all" value="bariafree">
+								<span>バリアフリー</span>
+							</label>
+							<label>
+								<input type="checkbox" name="bf" value="toile">
+								<span>多様機能トイレ</span>
+							</label>
+							<label>
+								<input type="checkbox" name="bf" value="slowp">
+								<span>スロープ</span>
+							</label>
+							<label>
+								<input type="checkbox" name="bf" value="kurumaisu">
+								<span>車椅子対応</span>
+							</label>
+						</div>
+
+						<div class="search_other search_cr">
+							<label>
+								<input type="checkbox" name="other" value="suction_machine">
+								<span>吸引器持ち込み</span>
+							</label>
+							<label>
+								<input type="checkbox" name="other" value="kositu">
+								<span>個室</span>
+							</label>
+						</div>
+
+						<div class="search_paking search_cr">
+							<label class="all">
+								<input type="checkbox" name="other" value="parking">
+								<span>駐車場</span>
+							</label>
+							<label>
+								<input type="radio" name="other" value="site">
+								<span>敷地内のみ</span>
+							</label>
+							<label>
+								<input type="radio" name="other" value="site_out">
+								<span>敷地外含む</span>
+							</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="info">
+		<h2>お知らせ</h2>
+		<ul class="notice">
+			<li class="dotted">
+				<span>2018.09.06</span><br>
+				<a href="">大阪府大阪市北区中崎町ホーム2018年10月リニューアルオープン！！</a>
+			</li>
+			<li class="dotted">
+				<span>2018.08.06</span><br>
+				<a href="">大阪府大阪市北区中崎町ホーム2018年10月リニューアルオープン！！</a>
+			</li>
+			<li class="dotted">
+				<span>2018.07.06</span><br>
+				<a href="">大阪府大阪市北区中崎町ホーム2018年10月リニューアルオープン！！</a>
+			</li>
+		</ul>
+	</div>
+	<div class="service_area">
+		<h2>サービス一覧</h2>
+		<ul class="sa marugo">
+			<li>
+				<h3>料金</h3>
+				<a href="">
+					<div class="sample">
+						<div class="charge_img">
+							<img src="img/sarvice_photo01.png" alt width="275px" height="195px">
+						</div>
+					</div>
+				</a>					
+				<p>ご利用しやすい価格でご提供いたします。</p>
+				<a class="button" href=""><img src="img/yazirusi.png" alt width="24px" height="18px"></a>
+				</li>
+				<li>
+				<h3>お食事</h3>
+					<a href="">
+						<div class="sample">
+							<div class="charge_img">
+								<img src="img/sarvice_photo03.png" alt width="275px" height="195px">
+							</div>
+						</div>
+					</a>
+						<p>いろんな食事形態でおいしい料理をご提供いたします。</p>
+					<a class="button" href=""><img src="img/yazirusi.png" alt width="24px" height="18px"></a>
+				</li>
+				<li>
+				<h3>四季イベント</h3>
+					<a href="">
+						<div class="sample">
+							<div class="charge_img">
+								<img src="img/sarvice_photo02.png" alt width="275px" height="195px">
+							</div>
+						</div>
+					</a>
+					<p>四季のイベント盛りだくさん！楽しいひとときを過ごしましょう。</p>
+				<a class="button" href=""><img src="img/yazirusi.png" alt width="24px" height="18px"></a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="all_site_map">
+	<div class="sitemap_navi_01">
+		<p>お電話でのお問い合わせ</p>
+		<p><span>0120-123-456</span></p>
+		<p>受付時間 / 9:00~18:00</p>
+		<p><a href="">土・日・祝のお問い合わせはこちら</a></p>
+	</div>
+	<div class="sitemap_navi_02">
+		<p class="network">ネットでのお問い合わせ</p>
+		<p><a href="">お問い合わせ</a></p>
+	</div>
+</div>
+
+<div class="fixed_menu">
+	<div class="P-r">
+		<div class="icon P-a">
+			<div class="P-r">
+				<img src="img/fixed_icon_on.png" alt="" class="on P-a">
+				<img src="img/fixed_icon_off.png" alt="" class="off P-a">
+			</div>
+		</div>
+		<div class="block">
+			<a href="call_1.html" class="img"><img src="img/fixed_btn_2.png" alt="レストランを呼ぶ"></a>
+			<a href="" class="btn">ログインしてご利用いただけます。</a>
+		</div>
+	</div>
+</div>
+
+<footer id="foot">
+	<div class="fNavi_01">
+		<div class="f_logo">
+			<p><img src="img/logo_set.png" widht="100" height="100" alt="すまいる食卓ロゴ"></p>
+		</div>
+		<ul class="fNavi_02">
+			<li><a href="">会社情報</a></li>
+			<li><a href="">個人情報保護方針</a></li>
+			<li><a href="">サイト利用上の注意</a></li>
+			<li><a href="">サイトマップ</a></li>
+		</ul>
+	</div>
+	<div class="top_back">
+		<p><a href="#container"><img src="img/yazirusi_02.png" widht="80"" height="45" alt="トップに戻る"></a></p>
+	</div>
+	<div class="last_copyright">
+		<p><small>Copyright &copy; 2018 himawari All rights reserved</small></p>
+	</div>
+</footer>
+</div>
+<script type="text/javascript">
+	$(function() {
+		$('.slider').slick({
+			accessibility: true,
+			dots: true,
+			autoplay: true,
+			prevArrow: '<button class="slick-prev" href="#" style="left: 10px;z-index:1000;">前へ</button>',
+			nextArrow: '<button class="slick-next" href="#" style="right:60px;z-index:1000;">次へ</button>',
+		});
+	});
+</script>
+</body>	
+</html>			
+
+	
+
+
+
+		
+		
+

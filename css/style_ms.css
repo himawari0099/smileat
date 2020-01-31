@@ -1,0 +1,287 @@
+/* style_ms.css */
+
+/* ----------
+- - 目次 - -
+
+よくある質問
+サービスについて
+
+---------- */
+
+*{margin:0;padding:0;}
+body{width:100%;background-color:#fcfbd7;}
+
+.page_title{
+	width: 100%;
+	height: 216px;
+	line-height: 216px;
+	background-color: #fff;
+	margin-bottom: 86px;
+}
+
+.page_title h2{
+	width: 1055px;
+	padding: 0 55px;
+	margin: 0 auto;
+	font-size: 48px;
+	font-weight: 100;
+	color: #4f4f4f;
+	text-align: left;
+}
+
+h3.title_3{
+	width: 960px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 auto 65px;
+	padding: 0 20px;
+	border-radius: 10px;
+	font-size: 36px;
+	font-weight: 100;
+	color: #fff;
+	background-color: #95621a;
+}
+
+h3.title_3::before{
+	content: "・";
+}
+
+
+
+
+/* ↓ よくある質問 ↓ */
+
+.qa .qa_block{
+	width: 960px;
+	padding: 20px 20px 60px;
+	margin: 0 auto 85px;
+	background-color: #fff;
+	font-size: 36px;
+	font-weight: 100;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.qa .qa_block .question{
+	height: 76px;
+	width: 790px;
+	line-height: 76px;
+	padding-left: 110px;
+	background: url(../img/qa_icon_q.png) no-repeat;
+}
+
+.qa .qa_block .question::after{
+	content: "";
+	display: block;
+	margin-top: 30px;
+	border-bottom: 5px dotted #95621a;
+}
+
+.qa .qa_block .answer{
+	width: 790px;
+	padding-left: 110px;
+	margin-top: 80px;
+	background: url(../img/qa_icon_a.png) no-repeat;
+	font-size: 32px;
+	text-align: justify;
+}
+
+.qa .qa_block .answer em{
+	display: block;
+	line-height: 76px;
+	font-style: normal;
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+
+/* ↓ サービスについて ↓ */
+
+.service .service_block{
+	width: 940px;
+	background-color: #fff;
+	margin: 0 auto 90px;
+	padding: 40px 30px;
+	font-size: 20px;
+	font-weight: 100;
+	position: relative;
+}
+
+.service .service_block > h4,
+.service .block_wraps{
+	padding-left: 70px;
+}
+
+.service .service_block > h4{
+	font-size: 25px;
+	font-weight: 100;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.service .service_block > h4::before{
+	content: "";
+	display: block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #168200;
+	position: absolute;
+	top: 2px;
+	left: 0;
+}
+
+.service .service_block em{
+	color: #e13f49;
+	font-style: normal;
+}
+
+.service .block_wraps{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 85px;
+}
+
+.service .block_wraps .text{
+	width: 560px;
+	text-align: justify;
+}
+
+
+/* 検索結果 */
+
+.search_result h2 em{
+	color: #8fc31f;
+	font-style: normal;
+}
+
+.searchR_block{
+	border: 1px solid #333;
+	background-color: #fff;
+	margin: 75px auto;
+	padding: 0 30px;
+	width: 1040px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.searchR_block h3{
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px solid #333;
+	font-size: 25px;
+}
+
+.searchR_block .block_wraps{
+	padding: 25px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.searchR_block .block_wraps table{
+	width: 650px;
+	line-height: 50px;
+	border-collapse: collapse;
+	font-size: 22px;
+}
+
+.searchR_block .block_wraps table th,
+.searchR_block .block_wraps table td{
+	border: 1px solid #333;
+	padding: 0 20px;
+}
+
+.searchR_block .block_wraps table th{
+	background-color: #e5e5e5;
+}
+
+.searchR_block a{
+	display: block;
+	color: #8fc31f;
+	font-size: 25px;
+	text-align: center;
+	border-top: 1px solid #333;
+	padding: 5px 0;
+}
+
+/* お申込み */
+
+.call h3{
+	text-align: left;
+}
+
+.call form{
+	text-align: center;
+}
+
+.call .call_form{
+	width: 620px;
+	margin: 0 auto 90px;
+	border-collapse: collapse;
+	font-size: 20px;
+	text-align: left;
+}
+
+.call .call_form th,
+.call .call_form td{
+	border: 1px solid #333;
+}
+
+.call .call_form th{
+	width: 120px;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #8fc31f;
+}
+
+.call .call_form td{
+	padding: 10px 55px;
+	background-color: #fff;
+}
+
+.call .call_form small{
+	font-size: 10px;
+}
+
+.call .call_form input,
+.call .call_form select{
+	font-size: 20px;
+	background-color: #dcdcdc;
+	width: 250px;
+}
+
+.call .submit{
+	display: inline-block;
+	text-align: center;
+	width: 350px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 32px;
+	color: #fff;
+	background-color: #e4535c;
+	margin-bottom: 80px;
+}
+
+.call .submit.non{
+	background-color: #7d7d7d;
+}
+
+.call #main{
+	text-align: center;
+}
+
+.call .confirmation{
+	border: 1px solid #333;
+	width: 600px;
+	margin: 0 auto 160px;
+	padding: 60px 0;
+	font-size: 35px;
+	background-color: #8fc31f;
+	color: #fff;
+}
+
+.call .confirmation a{
+	font-size: 22px;
+	color: #fff;
+	text-decoration: underline;
+}
